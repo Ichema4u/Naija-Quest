@@ -9,6 +9,9 @@
     "dev": "node server.js",
     "check": "node --check server.js && node --check public/assets/js/game.js"
   },
+ "dependencies": {
+  "express": "^4.21.2"
+},  
   "engines": {
     "node": ">=20"
   }
