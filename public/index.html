@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Naija Quest — 3D Adventure</title>
+<link rel="stylesheet" href="/assets/css/style.css"></head><body><div class="wrap">
+<header><h1>🌍 NAIJA QUEST</h1><div class="muted">The Ultimate Nigerian Village Adventure</div></header>
+<section id="setup" class="panel"><h2>Create your adventurer</h2><div class="row">
+<div class="field"><label for="name">CHARACTER NAME</label><input id="name" maxlength="24" value="Explorer" placeholder="Choose any name"></div>
+<div class="field"><label for="gender">CHARACTER</label><select id="gender"><option value="male">Male</option><option value="female">Female</option></select></div>
+<div class="field"><label for="skin">SKIN TONE</label><select id="skin"><option value="#8b573b">Warm brown</option><option value="#603b2b">Deep brown</option><option value="#bd8660">Light brown</option></select></div></div>
+<label>OUTFIT</label><div id="outfits"><button class="active" data-color="#2879c9">Blue</button><button data-color="#27834d">Green</button><button data-color="#c33d36">Red</button><button data-color="#9b59b6">Purple</button></div>
+<p id="preview" class="muted">🧑🏾 Explorer · Male · Blue outfit</p><button class="primary" id="start">START ADVENTURE ▶</button></section>
+<section id="play" class="hidden"><div class="stats">
+<div class="stat"><small>TREASURES</small><b id="score">0 / 5</b></div><div class="stat"><small>HEALTH</small><b id="health">❤️❤️❤️</b></div><div class="stat"><small>PLAYER</small><b id="player">Explorer</b></div></div>
+<div class="gamebox"><canvas id="game"></canvas><div class="overlay" id="overlay"><div class="panel"><h2 id="result">Quest complete!</h2><p id="resultText"></p><button class="primary" id="again">PLAY AGAIN</button><button id="change">CHANGE CHARACTER</button></div></div></div>
+<div class="panel controls"><div><b id="mission">Mission: Collect 5 golden kola nuts</b><p class="muted" id="message">Avoid thorn bushes. Find all the treasures!</p><small class="muted">Keyboard: WASD / arrow keys · Mobile: direction pad</small></div>
+<div class="pad"><span class="blank"></span><button data-key="up">▲</button><span class="blank"></span><button data-key="left">◀</button><button data-key="down">▼</button><button data-key="right">▶</button></div></div></section>
+</div>
+<script type="module" src="/assets/js/game.js"></script></body></html>
